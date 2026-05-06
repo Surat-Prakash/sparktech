@@ -45,8 +45,6 @@ export function HeroSection() {
           animate="visible"
         >
           <motion.div variants={itemVariants} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-cyan-400 text-sm font-medium mb-8 backdrop-blur-md shadow-[0_0_15px_rgba(34,211,238,0.1)]">
-            <Sparkles size={16} />
-            <span>Welcome to the future of AI</span>
           </motion.div>
 
           <motion.div variants={itemVariants} className="relative mb-6">
@@ -77,7 +75,7 @@ export function HeroSection() {
               <Button
                 size="lg"
                 className="relative w-full sm:w-auto bg-[#0A0F1C] border border-white/10 text-white hover:bg-white/5 hover:text-cyan-400 transition-all duration-300"
-                onClick={() => window.open('https://chat.whatsapp.com/YOUR_GROUP_LINK', '_blank')}
+                onClick={() => window.open('https://chat.whatsapp.com/G3XaKFfbVc659w9lGI8Xxi', '_blank')}
               >
                 Join Community
                 <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />

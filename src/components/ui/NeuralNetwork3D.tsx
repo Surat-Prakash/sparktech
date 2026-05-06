@@ -4,8 +4,8 @@ import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Bloom, EffectComposer } from "@react-three/postprocessing";
 import { useRef } from "react";
 import * as THREE from "three";
-const NUM_NODES = 60;
-const CONNECTION_DISTANCE = 2.5;
+const NUM_NODES = 120;
+const CONNECTION_DISTANCE = 3.2;
 const CONNECTION_DISTANCE_SQ =
   CONNECTION_DISTANCE * CONNECTION_DISTANCE;
 

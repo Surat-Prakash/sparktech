@@ -84,7 +84,7 @@ export function OfferingsSection() {
               <Card className="h-full flex flex-col group relative overflow-hidden">
                 {/* Internal card glow on hover */}
                 <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-                
+
                 <div className="w-14 h-14 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center mb-6 shadow-inner">
                   {offering.icon}
                 </div>

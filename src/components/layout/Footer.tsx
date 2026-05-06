@@ -25,10 +25,10 @@ export function Footer() {
               A thriving AI-focused community dedicated to connecting students with industry experts, researchers, and professionals in Artificial Intelligence.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="p-2 bg-white/5 rounded-full border border-white/10 text-gray-400 hover:text-accent-400 hover:border-accent-400/50 hover:bg-white/10 transition-colors">
+              <a href="https://www.linkedin.com/in/spark-tech-ai-hub-882b5a375/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B5YRJ4%2FoeRuygMsP80D2dAQ%3D%3D" className="p-2 bg-white/5 rounded-full border border-white/10 text-gray-400 hover:text-accent-400 hover:border-accent-400/50 hover:bg-white/10 transition-colors">
                 <FiLinkedin size={20} />
               </a>
-              <a href="#" className="p-2 bg-white/5 rounded-full border border-white/10 text-gray-400 hover:text-accent-400 hover:border-accent-400/50 hover:bg-white/10 transition-colors">
+              <a href="https://www.instagram.com/sparktechaihub?igsh=MTdzc3A4M2x3aDRxNg==" className="p-2 bg-white/5 rounded-full border border-white/10 text-gray-400 hover:text-accent-400 hover:border-accent-400/50 hover:bg-white/10 transition-colors">
                 <FiInstagram size={20} />
               </a>
               <a href="#" className="p-2 bg-white/5 rounded-full border border-white/10 text-gray-400 hover:text-accent-400 hover:border-accent-400/50 hover:bg-white/10 transition-colors">
@@ -52,7 +52,7 @@ export function Footer() {
             <p className="text-gray-400 mb-4 text-sm">
               Join Spark Tech AI Hub and start your AI journey today.
             </p>
-            <Button size="sm" className="w-full sm:w-auto" onClick={() => window.open('https://chat.whatsapp.com/YOUR_GROUP_LINK', '_blank')}>
+            <Button size="sm" className="w-full sm:w-auto" onClick={() => window.open('https://chat.whatsapp.com/G3XaKFfbVc659w9lGI8Xxi', '_blank')}>
               Join Now
             </Button>
           </div>

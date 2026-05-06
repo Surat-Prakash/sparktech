@@ -1,7 +1,8 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { animate, motion, useInView, useMotionValue, useTransform } from "framer-motion";
 import { GraduationCap } from "lucide-react";
+import { useEffect, useRef } from "react";
 
 const partners = [
   "Jamia Hamdard University",
@@ -13,6 +14,18 @@ const partners = [
 ];
 
 export function PartnersSection() {
+  const countRef = useRef(null);
+  const isInView = useInView(countRef, { once: true, margin: "-100px" });
+  const count = useMotionValue(0);
+  const rounded = useTransform(count, Math.round);
+
+  useEffect(() => {
+    if (isInView) {
+      const animation = animate(count, 30, { duration: 2, ease: "easeOut" });
+      return animation.stop;
+    }
+  }, [isInView, count]);
+
   return (
     <section id="partners" className="py-20 bg-transparent relative z-10">
       <div className="container mx-auto px-4 md:px-6">
@@ -20,8 +33,8 @@ export function PartnersSection() {
           <div className="inline-block px-3 py-1 rounded-full bg-white/5 border border-white/10 text-accent-400 text-sm font-medium mb-4 backdrop-blur-sm">
             University Partners
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-            Trusted by 30+ Universities
+          <h2 ref={countRef} className="text-3xl md:text-5xl font-bold text-white mb-6">
+            Trusted by <motion.span>{rounded}</motion.span>+ Universities
           </h2>
           <p className="text-lg text-gray-400">
             We collaborate with leading educational institutions to bring AI education to students across the country.

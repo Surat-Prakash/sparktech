@@ -22,17 +22,17 @@ export function NeuralNetwork() {
 
     let animationFrameId: number;
     let nodes: Node[] = [];
-    
+
     // Mouse interaction state
     const mouse = { x: -1000, y: -1000 };
 
     const initCanvas = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
-      
+
       // Calculate number of nodes based on screen size to maintain performance
       const numNodes = Math.floor((canvas.width * canvas.height) / 15000);
-      
+
       nodes = Array.from({ length: Math.min(numNodes, 150) }).map(() => ({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
@@ -44,7 +44,7 @@ export function NeuralNetwork() {
 
     const draw = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      
+
       // Update and draw nodes
       nodes.forEach((node) => {
         node.x += node.vx;
@@ -58,7 +58,7 @@ export function NeuralNetwork() {
         const dxMouse = mouse.x - node.x;
         const dyMouse = mouse.y - node.y;
         const distMouse = Math.sqrt(dxMouse * dxMouse + dyMouse * dyMouse);
-        
+
         if (distMouse < 150) {
           node.x += dxMouse * 0.01;
           node.y += dyMouse * 0.01;

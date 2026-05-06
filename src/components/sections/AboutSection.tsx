@@ -15,11 +15,11 @@ export function AboutSection() {
     <section id="about" className="py-20 bg-transparent relative overflow-hidden">
       {/* Background Glow */}
       <div className="absolute top-1/2 left-0 w-[500px] h-[500px] bg-purple-600/10 blur-[120px] rounded-full pointer-events-none -translate-y-1/2 -translate-x-1/2" />
-      
+
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="flex flex-col md:flex-row gap-12 items-center">
-          
-          <motion.div 
+
+          <motion.div
             className="flex-1"
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -42,7 +42,7 @@ export function AboutSection() {
             </div>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="flex-1 w-full glass-card rounded-3xl p-8 md:p-10"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}

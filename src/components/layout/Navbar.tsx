@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Zap } from "lucide-react";
 import Link from "next/link";
 import { Button } from "../ui/Button";
+import logo from "@/images/logo.png";
 
 const navLinks = [
   { name: "About", href: "#about" },
@@ -27,17 +28,18 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-[#020617]/70 backdrop-blur-xl border-b border-white/5 py-3" : "bg-transparent py-5"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-[#020617]/70 backdrop-blur-xl border-b border-white/5 py-3" : "bg-transparent py-5"
+        }`}
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="bg-gradient-to-br from-primary-600 to-accent-400 p-2 rounded-xl text-white shadow-[0_0_15px_rgba(34,211,238,0.3)] group-hover:shadow-[0_0_25px_rgba(34,211,238,0.5)] transition-all">
-              <Zap size={24} fill="currentColor" />
-            </div>
+            <img
+              src={logo.src}
+              alt="Spark Tech Logo"
+              className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-[0_0_8px_rgba(34,211,238,0.3)]"
+            />
             <span className="font-bold text-xl tracking-tight text-white">
               Spark Tech<span className="text-accent-400">.</span>
             </span>
@@ -58,7 +60,7 @@ export function Navbar() {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button size="sm" onClick={() => window.open('https://chat.whatsapp.com/YOUR_GROUP_LINK', '_blank')}>
+            <Button size="sm" onClick={() => window.open('https://chat.whatsapp.com/G3XaKFfbVc659w9lGI8Xxi', '_blank')}>
               Join Community
             </Button>
           </div>
@@ -93,7 +95,7 @@ export function Navbar() {
               </Link>
             ))}
             <div className="pt-2 border-t border-white/10">
-              <Button className="w-full" onClick={() => window.open('https://chat.whatsapp.com/YOUR_GROUP_LINK', '_blank')}>
+              <Button className="w-full" onClick={() => window.open('https://chat.whatsapp.com/G3XaKFfbVc659w9lGI8Xxi', '_blank')}>
                 Join Community
               </Button>
             </div>

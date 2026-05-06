@@ -35,7 +35,7 @@ export function EventsSection() {
     <section id="events" className="py-20 bg-transparent relative z-10">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
-          
+
           <div className="lg:w-1/3">
             <div className="inline-block px-3 py-1 rounded-full bg-white/5 border border-white/10 text-accent-400 text-sm font-medium mb-4 backdrop-blur-sm">
               Events & Collaboration
@@ -46,7 +46,7 @@ export function EventsSection() {
             <p className="text-lg text-gray-400 mb-8">
               We host a variety of events designed to provide hands-on experience, foster innovation, and build a strong network within the tech community.
             </p>
-            
+
             <div className="glass-card rounded-2xl p-6 border-white/10 relative overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-accent-400 to-purple-500" />
               <h4 className="font-bold text-white mb-2">Want to collaborate?</h4>
