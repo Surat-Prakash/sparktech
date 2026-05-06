@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "../ui/Button";
-import { NeuralNetwork3D } from "../ui/NeuralNetwork3D";
+import NeuralNetwork3D from "../ui/NeuralNetwork3D";
 
 export function HeroSection() {
   const containerVariants = {
