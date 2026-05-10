@@ -44,8 +44,6 @@ export function HeroSection() {
           initial="hidden"
           animate="visible"
         >
-          <motion.div variants={itemVariants} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-cyan-400 text-sm font-medium mb-8 backdrop-blur-md shadow-[0_0_15px_rgba(34,211,238,0.1)]">
-          </motion.div>
 
           <motion.div variants={itemVariants} className="relative mb-6">
             {/* Gradient Glow Behind Heading */}

@@ -7,6 +7,7 @@ import { EventsSection } from "@/components/sections/EventsSection";
 import { SponsorsSection } from "@/components/sections/SponsorsSection";
 import { PartnersSection } from "@/components/sections/PartnersSection";
 import { GallerySection } from "@/components/sections/GallerySection";
+import { TeamSection } from "@/components/sections/TeamSection";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <EventsSection />
         <PartnersSection />
         <GallerySection />
+        <TeamSection />
       </main>
       <Footer />
     </>
